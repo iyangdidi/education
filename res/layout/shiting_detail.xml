@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:layout_margin="20dp">
+    
+    <ImageView         
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/shiting_pic"
+        android:src="@drawable/shiting_item_1"/>
+    <TextView 
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/shiting_desc"
+        android:text="夏天是炎热的季节；我和妈妈穿着短袖和短裤"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"/>
+   	<TextView 
+   	    android:gravity="center"
+       	android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:id="@+id/shiting_next"
+        android:background="@drawable/ic_next"
+        android:text="下一张"/>
+    
+    
+
+</LinearLayout>

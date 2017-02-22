@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        
+    
+    <color name="header_yellow">#feea00</color>
+    <color name="bottom_yellow">#ffeea0</color>
+    <color name="header_btn_yellow">#ffeea0</color>
+    <color name="gray">#b0b0b0</color>
+    <color name="black">#000000</color>
+    <color name="gray_white">#EAEAEA</color>
+        
+    
+    <!-- previous -->
+    <color name="btn_bule1">#34b9f5</color>
+    <color name="btn_bule">#00a8e7</color>
+    <color name="tab_select_font">#ff0000</color>
+    <color name="text_minor">#ff666666</color>
+	<color name="tab_select_font_red">#ff0000</color>
+    <color name="main_bg">#F8F8F8</color>
+    <color name="white">#ffffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="green">#5fc5c7</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="bg_gray">#f0f0f0</color>
+    <color name="gray_black">#88000000</color>
+    <color name="bule">#ff0000ff</color>
+	<color name="transparent">#00000000</color>
+    <color name="list_item_background_light">#fafafa</color>
+     <color name="sample_list_background">#fafafa</color>
+    <drawable name="red">#7f00</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="yellow">#77ffff00</drawable>
+    <drawable name="white">#ffffffff</drawable>
+    <drawable name="gray">#ff333333</drawable>
+    <drawable name="black">#ff000000</drawable>
+    <drawable name="pure_blue">#77c8f7</drawable>
+    <drawable name="light_black">#ff333333</drawable>
+    <drawable name="light_gray">#f0f0f0</drawable>
+    <drawable name="list_item_bg">#ffF6F6F6</drawable>
+    <drawable name="cate_item_bg_deep_blue">#ffcbd9e3</drawable>
+    <drawable name="cate_item_bg_light_blue">#ffeaf0f4</drawable>
+    <drawable name="grey">#ff888888</drawable>
+    
+     <color name="text_minor_black">#ff333333</color>
+    <color name="default_bg">#EBE9F0</color>
+    <color name="light_gray">#818181</color>
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="btn_register_normal">#2dafa3</color>
+    <color name="btn_register_pressed">#4ebcd3</color>
+    
+    
+    <color name="line_dark">#d7d7d7</color>
+    
+    <color name="banner_background">#f5f5f5</color>
+    <color name="custom_list_background">#f5f5f5</color>
+    
+    <color name="trans">#00000000</color>
+    
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    
+    <color name="fontcolor1">#333333</color>
+    <color name="fontcolor2">#727272</color>
+    <color name="fontcolor3">#b6b6b6</color>
+    <color name="font_green1">#4cd964</color>
+    <color name="font_red1">#fd523f</color>
+    <color name="font_blue1">#34b9f5</color>
+    <color name="font_black1">#4a4b4e</color>
+    <color name="font_black2">#333333</color>
+</resources>

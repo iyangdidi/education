@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@color/header_btn_yellow" >
+	
+    <!-- 乐库 -->
+    <LinearLayout 
+        android:id="@+id/btn_yueku"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" 
+        android:gravity="center_horizontal" 
+        android:onClick="yuekuClick">
+        <TextView 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/header_yueku"
+            android:layout_weight="0"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乐库"
+            android:gravity="bottom"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- 短篇旋律 -->
+    <LinearLayout 
+        android:id="@+id/btn_duanpian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" 
+        android:gravity="center_horizontal"
+        android:onClick="duanpianClick"    >
+        <TextView 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/header_xuanlv"
+            android:layout_weight="0"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短篇旋律"
+            android:gravity="bottom"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    
+    <!-- 乐器辨识 -->
+    <LinearLayout 
+        android:id="@+id/btn_yueqi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" 
+        android:gravity="center_horizontal"
+        android:onClick="yueqiClick"     >
+        <TextView 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/header_yueqi"
+            android:layout_weight="0"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乐器辨识"
+            android:gravity="bottom"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- 游戏 -->
+    <LinearLayout 
+        android:id="@+id/btn_youxi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" 
+        android:gravity="center_horizontal" 
+        android:onClick="youxiClick"    >
+        <TextView 
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/header_game"
+            android:layout_weight="0"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游戏"
+            android:gravity="bottom"
+            android:layout_weight="1"/>
+    </LinearLayout>    
+
+</LinearLayout>

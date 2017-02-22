@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    <!-- Overall Layout -->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- Header Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@color/header_yellow"
+            android:orientation="horizontal" >
+            <!-- Header Search Box -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <!-- 點擊搜索 -->
+                <TextView
+                    android:id="@+id/search_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_search"
+                    android:layout_weight="0"
+                    android:onClick="searchOnClick"/>
+                <!-- 搜索框 -->
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="1">
+                    <EditText 
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                    	android:id="@+id/search_box"
+                    	android:layout_width="match_parent"
+                    	android:layout_height="match_parent"
+                    	android:background="@color/gray_white"
+                    	android:editable="true"
+                    	android:hint="搜索"  />
+                </LinearLayout>
+                
+                <!-- 湊一個半圓框 -->
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <!-- Header Btn Box -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/header_btn_yellow"
+            android:orientation="horizontal">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                <requestFocus />
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+        
+        <!-- Content -->
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <ScrollView 
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ScrollView>
+        </LinearLayout>
+     
+		<!-- Bottom -->
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:layout_weight="0">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/bottom_yellow"/>
+            <TextView 
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_flower"
+                android:onClick="xiaolianOnClick"/>
+        </RelativeLayout>        
+        
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_music"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal" 
+    android:background="@color/gray_white"
+    android:padding="5dp"
+    android:gravity="center_vertical">
+    <TextView 
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_recorder"
+        android:layout_marginLeft="5dp"/>
+    <TextView 
+        android:id="@+id/music_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="音乐条目"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

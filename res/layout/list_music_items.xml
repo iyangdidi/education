@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_music"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:gravity="center_vertical">
+   
+    <!-- 本地 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+        <!-- 本地标志 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gray"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="本地" />
+            <!-- 按钮 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_bendi_add"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"                    
+                    android:background="@drawable/ic_add"
+                    android:layout_marginRight="20dp"/>
+                <LinearLayout 
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:onClick="bendiFoldOnClick">
+	                <TextView
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_gravity="center"
+	                    android:id="@+id/btn_bendi_fold"
+	                    android:layout_width="20dp"
+	                    android:layout_height="20dp"
+	                    android:background="@drawable/ic_openfold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 本地资料List -->
+        <ListView 
+            android:id="@+id/list_bendi_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+        
+    </LinearLayout>
+    
+    <!-- 在线-->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+        <!-- 在线标志 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gray"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="在线" />
+            <!-- 按钮 -->
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent" 
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:onClick="zaixianFoldOnClick">
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_zaixian_fold"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_openfold"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 在线资料List -->
+        <ListView 
+            android:id="@+id/list_zaixian_music"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+        
+    </LinearLayout>    
+
+</LinearLayout>
